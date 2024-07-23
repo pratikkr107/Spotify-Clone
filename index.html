@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+  </head>
+
+  <body>
+    <div class="container flex">
+      <div class="left bg-black">
+        <div class="close invert">
+          <img src="close.svg" alt="" />
+        </div>
+        <div class="home bg-grey rounded m-1 p-1">
+          <div class="logo"><img class="invert" src="logo.svg" alt="" /></div>
+          <ul>
+            <li><img class="invert" src="home.svg" alt="home" />Home</li>
+            <li><img class="invert" src="search.svg" alt="search" />Search</li>
+          </ul>
+        </div>
+        <div class="library bg-grey rounded m-1 p-1">
+          <div class="heading flex items-centre">
+            <img class="invert" src="playlist.svg" alt="" />
+            <h3>Your Library</h3>
+          </div>
+          <div class="song-list">
+            <ul>
+              <li>
+                <img class="playbtn invert" src="music.svg" alt="" />
+                <div class="info">
+                  <div>Song Name</div>
+                  <div>Song Artist</div>
+                </div>
+                <img class="playbtn invert" src="play.svg" alt="" />
+              </li>
+            </ul>
+          </div>
+          <div class="footer flex">
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/"
+                ><span>Legal</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/safetyandprivacy/"
+                ><span>Safety &amp; Privacy Center</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/privacy-policy/"
+                ><span>Privacy Policy</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/cookies-policy/"
+                ><span>Cookies</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"
+                ><span>About Ads</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/accessibility/"
+                ><span>Accessibility</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right bg-grey rounded">
+        <div class="header flex">
+          <div class="nav flex items-centre justify-centre">
+            <img class="hamburger invert" src="hamburger.svg" alt="" />
+            <svg
+              class="invert"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              color="#000000"
+              fill="none"
+            >
+              <path
+                d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <svg
+              class="invert"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              color="#000000"
+              fill="none"
+            >
+              <path
+                d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="buttons">
+            <button class="signup-btn">Sign up</button>
+            <button class="login-btn">Log in</button>
+          </div>
+        </div>
+        <div class="spotify-playlist">
+          <h2>Spotify Playlist</h2>
+        </div>
+        <div class="card-container flex">
+          <div data-folder="AllTimeHits" class="card">
+            <div class="play">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="30"
+                height="30"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="11"
+                  fill="#00FF00"
+                  stroke="#000000"
+                  stroke-width="1"
+                />
+                <path
+                  d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                  stroke="#000000"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                  fill="none"
+                />
+              </svg>
+            </div>
+            <img
+              src="https://i.scdn.co/image/ab67706f0000000281722192322800ae99c2ed06"
+              alt=""
+            />
+            <h2>Punjabi Hits</h2>
+            <p>Gentle Ambient piano to help you fall asleep.</p>
+          </div>
+          <div data-folder="Bollywood" class="card">
+            <img
+              src="https://i.scdn.co/image/ab67706f000000028998614b3281e12596844039"
+              alt=""
+            />
+            <h2>Bollywood</h2>
+            <p>
+              Sleep with sounds of pouring rain and occasional rolling thunder.
+            </p>
+          </div>
+          <div data-folder="EnglishPop" class="card">
+            <img
+              src="https://i.scdn.co/image/ab67706f000000027e858e4098c8a256ca51d770"
+              alt=""
+            />
+            <h2>English Pop</h2>
+            <p>Instrumental beats for a restful night's sleep.</p>
+          </div>
+          <!-- <div class="card">
+                    <img src="https://i.scdn.co/image/ab67706f000000028998614b3281e12596844039" alt="" />
+                    <h2>Night Rain</h2>
+                    <p>Sleep with sounds of pouring rain and occasional rolling thunder.</p>
+                </div>
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67706f000000027e858e4098c8a256ca51d770" alt="" />
+                    <h2>lofi sleep</h2>
+                    <p>Instrumental beats for a restful night's sleep.</p>
+                </div> -->
+        </div>
+        <div class="playbar">
+          <div class="playbar_cont flex">
+            <div class="song-info invert">Song</div>
+
+            <div class="songbuttons flex justify-centre items-centre">
+              <img width="30" id="previous" src="previous.svg" alt="" />
+              <img width="30" id="play" src="play.svg" alt="" />
+              <img width="30" id="next" src="next.svg" alt="" />
+            </div >
+                <div class="playbar-right flex">
+                    <div class="song-time invert">Duration</div>
+                    <div class="volume">
+                        <img width="25" src="volume.svg" alt="" />
+                    <div class="range">
+                        <input type="range" name="volume" id="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="seekbar">
+            <div class="circle"></div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
